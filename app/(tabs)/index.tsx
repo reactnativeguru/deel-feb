@@ -7,7 +7,6 @@ import payslipData from '../../assets/data/mock.json'
 const PayslipItem = (item: Payslip, router: any) => {
   return (
     <TouchableOpacity onPress={() => router.push({ pathname: "/PayslipDetail", params: { id: item.id, payslip: item } })}>
-    {/* <TouchableOpacity onPress={() => router.push({ pathname: "/PayslipDetail", params: item })}> */}
       <View style={styles.payslipContainer}>
         <Text style={styles.payslipId}>{item.id}</Text>
         <Text>{`From: ${item.fromDate} To: ${item.toDate}`}</Text>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, StyleSheet, Linking } from 'react-native';
+import { View, Text, StyleSheet, Linking, Platform } from 'react-native';
 import { useLocalSearchParams } from "expo-router";
 import { Payslip } from '@/interfaces/Payslip';
 import payslipData from '../assets/data/mock.json'
@@ -33,7 +33,7 @@ const PayslipDetailScreen = () => {
           {payslip.file.fileName}
         </Text>
       </View>
-      <DownloadMedia url={payslip.file.fileUrl} fileName={payslip.file.fileName} />
+      {Platform.OS !== 'web' && <DownloadMedia url={payslip.file.fileUrl} fileName={payslip.file.fileName} />}
     </View>
   );
 };

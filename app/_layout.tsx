@@ -56,7 +56,7 @@ function RootLayoutNav() {
         <Stack.Screen name="PayslipDetail" options={{
           presentation: 'modal', title: 'Detail',
           headerRight: () => (
-            <Link href="/Payslip" asChild>
+            <Link href="/(tabs)" asChild>
               <Pressable>
                 {({ pressed }) => (
                   <FontAwesome
