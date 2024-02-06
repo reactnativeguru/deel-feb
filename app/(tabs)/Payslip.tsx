@@ -1,25 +1,13 @@
 import { FlatList, StyleSheet, TouchableOpacity } from 'react-native';
 import { useRouter } from 'expo-router';
-
-import EditScreenInfo from '@/components/EditScreenInfo';
 import { Text, View } from '@/components/Themed';
-import invoiceData from '../../assets/data/mock.json'
-
-
-interface Payslip {
-  id: string;
-  fromDate: string;
-  toDate: string;
-  file: {
-    fileName: string;
-    fileType: string;
-    fileUrl: string;
-  };
-}
+import { Payslip } from '@/interfaces/Payslip';
+import payslipData from '../../assets/data/mock.json'
 
 const PayslipItem = (item: Payslip, router: any) => {
   return (
-    <TouchableOpacity onPress={() => router.push('/invoiceNumber')}>
+    <TouchableOpacity onPress={() => router.push({ pathname: "/PayslipDetail", params: { id: item.id, payslip: item } })}>
+    {/* <TouchableOpacity onPress={() => router.push({ pathname: "/PayslipDetail", params: item })}> */}
       <View style={styles.payslipContainer}>
         <Text style={styles.payslipId}>{item.id}</Text>
         <Text>{`From: ${item.fromDate} To: ${item.toDate}`}</Text>
@@ -29,10 +17,9 @@ const PayslipItem = (item: Payslip, router: any) => {
   );
 }
 
-
-export default function PayslipScreen() {
+const PayslipScreen = () =>  {
   const router = useRouter();
-  const payslips: Payslip[] = invoiceData.data;
+  const payslips: Payslip[] = payslipData.data;
 
   return (
     <View style={styles.container}>
@@ -73,3 +60,5 @@ const styles = StyleSheet.create({
     textDecorationLine: 'underline',
   },
 });
+
+export default PayslipScreen;

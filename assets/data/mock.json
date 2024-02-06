@@ -7,7 +7,7 @@
           "file": {
             "fileName": "january_payslip.pdf",
             "fileType": "pdf",
-            "fileUrl": "https://example.com/path/to/january_payslip.pdf"
+            "fileUrl": "https://reactnative.guru/wp-content/uploads/2024/02/Invoice-0001.pdf"
           }
         },
         {
@@ -17,7 +17,7 @@
           "file": {
             "fileName": "february_payslip.pdf",
             "fileType": "pdf",
-            "fileUrl": "https://example.com/path/to/february_payslip.pdf"
+            "fileUrl": "https://reactnative.guru/wp-content/uploads/2024/02/Invoice-0002.pdf"
           }
         },
         {
@@ -27,7 +27,7 @@
           "file": {
             "fileName": "march_payslip.jpg",
             "fileType": "image",
-            "fileUrl": "https://example.com/path/to/march_payslip.jpg"
+            "fileUrl": "https://reactnative.guru/wp-content/uploads/2024/02/Invoice-0004.pdf"
           }
         },
         {
@@ -37,7 +37,7 @@
           "file": {
             "fileName": "april_payslip.pdf",
             "fileType": "pdf",
-            "fileUrl": "https://example.com/path/to/april_payslip.pdf"
+            "fileUrl": "https://reactnative.guru/wp-content/uploads/2024/02/Invoice-0005.pdf"
           }
         },
         {
@@ -47,7 +47,7 @@
           "file": {
             "fileName": "may_payslip.jpg",
             "fileType": "image",
-            "fileUrl": "https://example.com/path/to/may_payslip.jpg"
+            "fileUrl": "https://reactnative.guru/wp-content/uploads/2024/02/Invoice-0006-.pdf"
           }
         },
         {
@@ -57,7 +57,7 @@
           "file": {
             "fileName": "june_payslip.pdf",
             "fileType": "pdf",
-            "fileUrl": "https://example.com/path/to/june_payslip.pdf"
+            "fileUrl": "https://reactnative.guru/wp-content/uploads/2024/02/Invoice-0007-.pdf"
           }
         },
         {
@@ -67,7 +67,7 @@
           "file": {
             "fileName": "july_payslip.jpg",
             "fileType": "image",
-            "fileUrl": "https://example.com/path/to/july_payslip.jpg"
+            "fileUrl": "https://reactnative.guru/wp-content/uploads/2024/02/Invoice-0009-.pdf"
           }
         },
         {
@@ -77,7 +77,7 @@
           "file": {
             "fileName": "august_payslip.pdf",
             "fileType": "pdf",
-            "fileUrl": "https://example.com/path/to/august_payslip.pdf"
+            "fileUrl": "https://reactnative.guru/wp-content/uploads/2024/02/Invoice-0010.pdf"
           }
         },
         {
@@ -87,7 +87,7 @@
           "file": {
             "fileName": "september_payslip.jpg",
             "fileType": "image",
-            "fileUrl": "https://example.com/path/to/september_payslip.jpg"
+            "fileUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
           }
         },
         {
@@ -97,7 +97,7 @@
           "file": {
             "fileName": "october_payslip.pdf",
             "fileType": "pdf",
-            "fileUrl": "https://example.com/path/to/october_payslip.pdf"
+            "fileUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
           }
         },
         {
@@ -107,7 +107,7 @@
           "file": {
             "fileName": "november_payslip.jpg",
             "fileType": "image",
-            "fileUrl": "https://example.com/path/to/november_payslip.jpg"
+            "fileUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
           }
         },
         {
@@ -117,7 +117,7 @@
           "file": {
             "fileName": "december_payslip.pdf",
             "fileType": "pdf",
-            "fileUrl": "https://example.com/path/to/december_payslip.pdf"
+            "fileUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
           }
         },
         {
@@ -127,7 +127,7 @@
           "file": {
             "fileName": "january_2023_payslip.jpg",
             "fileType": "image",
-            "fileUrl": "https://example.com/path/to/january_2023_payslip.jpg"
+            "fileUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
           }
         },
         {
@@ -137,7 +137,7 @@
           "file": {
             "fileName": "february_2023_payslip.pdf",
             "fileType": "pdf",
-            "fileUrl": "https://example.com/path/to/february_2023_payslip.pdf"
+            "fileUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
           }
         },
         {
@@ -147,7 +147,7 @@
           "file": {
             "fileName": "march_2023_payslip.jpg",
             "fileType": "image",
-            "fileUrl": "https://example.com/path/to/march_2023_payslip.jpg"
+            "fileUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
           }
         }
       ]

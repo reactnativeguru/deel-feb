@@ -30,21 +30,14 @@ export default function TabLayout() {
         name="Payslip"
         options={{
           title: 'Payslip',
-          tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
-          headerRight: () => (
-            <Link href="/modal" asChild>
-              <Pressable>
-                {({ pressed }) => (
-                  <FontAwesome
-                    name="info-circle"
-                    size={25}
-                    color={Colors[colorScheme ?? 'light'].text}
-                    style={{ marginRight: 15, opacity: pressed ? 0.5 : 1 }}
-                  />
-                )}
-              </Pressable>
-            </Link>
-          ),
+          tabBarIcon: ({ color }) => <TabBarIcon name="list" color={color} />,
+        }}
+      />
+      <Tabs.Screen
+        name="Info"
+        options={{
+          title: 'Info',
+          tabBarIcon: ({ color }) => <TabBarIcon name="info-circle" color={color} />,
         }}
       />
     </Tabs>
