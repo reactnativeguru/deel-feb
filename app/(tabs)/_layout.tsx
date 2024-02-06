@@ -1,11 +1,11 @@
 import React from 'react';
 import FontAwesome from '@expo/vector-icons/FontAwesome';
-import { Link, Tabs } from 'expo-router';
-import { Pressable } from 'react-native';
+import { Tabs } from 'expo-router';
 
 import Colors from '@/constants/Colors';
 import { useColorScheme } from '@/components/useColorScheme';
 import { useClientOnlyValue } from '@/components/useClientOnlyValue';
+import { Color } from '@/interfaces/Tab';
 
 // You can explore the built-in icon families and icons on the web at https://icons.expo.fyi/
 function TabBarIcon(props: {
@@ -30,14 +30,14 @@ export default function TabLayout() {
         name="Payslip"
         options={{
           title: 'Payslip',
-          tabBarIcon: ({ color }) => <TabBarIcon name="list" color={color} />,
+          tabBarIcon: ({ color }: Color) => <TabBarIcon name="list" color={color} />,
         }}
       />
       <Tabs.Screen
         name="Info"
         options={{
           title: 'Info',
-          tabBarIcon: ({ color }) => <TabBarIcon name="info-circle" color={color} />,
+          tabBarIcon: ({ color }: Color) => <TabBarIcon name="info-circle" color={color} />,
         }}
       />
     </Tabs>

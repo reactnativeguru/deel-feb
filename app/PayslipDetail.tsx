@@ -3,6 +3,7 @@ import { View, Text, StyleSheet, Linking } from 'react-native';
 import { useLocalSearchParams } from "expo-router";
 import { Payslip } from '@/interfaces/Payslip';
 import payslipData from '../assets/data/mock.json'
+import DownloadMedia from '@/components/DownloadMedia';
 
 const PayslipDetailScreen = () => {
   const { id }: { id: string } = useLocalSearchParams();
@@ -32,6 +33,7 @@ const PayslipDetailScreen = () => {
           {payslip.file.fileName}
         </Text>
       </View>
+      <DownloadMedia url={payslip.file.fileUrl} fileName={payslip.file.fileName} />
     </View>
   );
 };
