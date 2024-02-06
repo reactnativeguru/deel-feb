@@ -33,11 +33,10 @@ Make sure you have the following software installed:
 1. **Start the Expo development server:**
 
    bash
-   expo start
+   npm start
 
 2. *Running on Device or Emulator:*
 
-   ```bash
 * npm run web
 * npm run android
 * npm run ios
