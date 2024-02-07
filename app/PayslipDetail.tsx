@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import { View, Text, StyleSheet, Linking, Platform } from 'react-native';
 import { useLocalSearchParams } from "expo-router";
 import { Payslip } from '@/interfaces/Payslip';
@@ -9,8 +9,22 @@ const PayslipDetailScreen = () => {
   const { id }: { id: string } = useLocalSearchParams();
   
   const payslips: Payslip[] = payslipData.data;
-  const payslip = payslips.find(item => item.id === id) as Payslip;
+  const [payslip, setPayslip] = useState<Payslip>({
+    "id": "",
+    "fromDate": "",
+    "toDate": "",
+    "file": {
+      "fileName": "",
+      "fileType": "",
+      "fileUrl": ""
+    }
+  });
 
+  useEffect(() => {
+    const data = payslips.find(item => item.id === id) as Payslip;
+    setPayslip(data)
+  }, [payslipData.data]);
+  
   const openFile = () => {
     Linking.openURL(payslip.file.fileUrl);
   };

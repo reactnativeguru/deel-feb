@@ -1,4 +1,5 @@
-import { FlatList, StyleSheet, TouchableOpacity } from 'react-native';
+import React, { useState, useEffect } from 'react';
+import { FlatList, StyleSheet, TouchableOpacity, } from 'react-native';
 import { useRouter } from 'expo-router';
 import { Text, View } from '@/components/Themed';
 import { Payslip } from '@/interfaces/Payslip';
@@ -16,9 +17,14 @@ const PayslipItem = (item: Payslip, router: any) => {
   );
 }
 
+
 const PayslipScreen = () =>  {
   const router = useRouter();
-  const payslips: Payslip[] = payslipData.data;
+  const [payslips, setPayslips] = useState<Payslip[]>([]);
+
+  useEffect(() => {
+    setPayslips(payslipData.data);
+  }, [payslipData.data]); 
 
   return (
     <View style={styles.container}>
